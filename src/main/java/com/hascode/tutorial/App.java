@@ -63,6 +63,7 @@ public class App {
 			testClient.setData().forPath("/config/search.url", "http://www.foo.de".getBytes());
 
 			System.console().readLine("press enter to shutdown application\n");
+			System.out.println("shutting down application..");
 
 			client.close();
 		}
