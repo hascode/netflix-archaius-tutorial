@@ -62,8 +62,7 @@ public class App {
 
 			testClient.setData().forPath("/config/search.url", "http://www.foo.de".getBytes());
 
-			// wait 1 minute to demonstrate settings properties via JMX
-			Thread.sleep(60000);
+			System.console().readLine("press enter to shutdown application\n");
 
 			client.close();
 		}
