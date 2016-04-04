@@ -61,6 +61,10 @@ public class App {
 			System.out.println("search url is: " + prop.get());
 
 			testClient.setData().forPath("/config/search.url", "http://www.foo.de".getBytes());
+
+			// wait 1 minute to demonstrate settings properties via JMX
+			Thread.sleep(60000);
+
 			client.close();
 		}
 	}
